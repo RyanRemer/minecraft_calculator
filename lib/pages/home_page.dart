@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minecraft_calculator/pages/end_portal_finder.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -19,6 +20,8 @@ class _HomePageState extends State<HomePage> {
         children: <Widget>[
           ListTile(
             title: Text("End Portal Finder"),
+            onTap: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => EndPortalFinder())),
           ),
           ListTile(
             title: Text("Circle Generator"),
