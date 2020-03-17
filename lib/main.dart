@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xFF692b1c),
         backgroundColor: Color(0xFF6d9d6d),
+        fontFamily: "Bits"
       ),
       home: HomePage()
     );
