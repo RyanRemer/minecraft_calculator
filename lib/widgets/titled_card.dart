@@ -31,7 +31,10 @@ class TitledCard extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: title,
               ),
-              content,
+              Padding(
+                padding: const EdgeInsets.only(bottom: 16.0),
+                child: content,
+              ),
             ],
           ),
         ),
