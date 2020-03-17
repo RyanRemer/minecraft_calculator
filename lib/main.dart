@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Color(0xFF692b1c),
+        primaryColor: Color(0xFF59271C),
         fontFamily: "Bits",
-        backgroundColor: Color(0xFF7EB55B),
+        backgroundColor: Color(0xFF61B43B),
 
         appBarTheme: AppBarTheme(
           textTheme: TextTheme(title: TextStyle(fontSize: 24, fontFamily: "Bits"))

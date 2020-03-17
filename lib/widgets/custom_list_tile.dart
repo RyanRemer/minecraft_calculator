@@ -9,16 +9,20 @@ class CustomListTile extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          border: Border.all(color:Colors.red),
-
-        ),
-        child: ListTile(
-          leading: icon,
-          title: Text(text),
-          onTap: this.onTap,
+      padding: const EdgeInsets.only(left:10.0, right:10.0, top:5.0, bottom: 5.0),
+      child: Card(
+        elevation: 5,
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+//            border: Border.all(color: Colors.red),
+          borderRadius: BorderRadius.circular(4.0),
+            color: Color(0xff3E7A16),
+          ),
+          child: ListTile(
+            leading: icon,
+            title: Text(text),
+            onTap: this.onTap,
+          ),
         ),
       ),
     );
