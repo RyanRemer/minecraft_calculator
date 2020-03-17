@@ -13,6 +13,12 @@ class MyApp extends StatelessWidget {
         primaryColor: Color(0xFF692b1c),
         fontFamily: "Bits",
         backgroundColor: Color(0xFF7EB55B),
+
+        appBarTheme: AppBarTheme(
+          textTheme: TextTheme(title: TextStyle(fontSize: 24, fontFamily: "Bits"))
+        ),
+
+
       ),
       home: HomePage()
     );
