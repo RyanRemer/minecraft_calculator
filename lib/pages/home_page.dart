@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:minecraft_calculator/pages/end_portal_finder.dart';
+import 'package:minecraft_calculator/widgets/custom_list_tile.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -18,19 +19,13 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Theme.of(context).backgroundColor,
       body: ListView(
         children: <Widget>[
-          DecoratedBox(
-            decoration: BoxDecoration(
-              border: Border.all(color:Colors.red),
-
-            ),
-            child: ListTile(
-              title: Text("End Portal Finder"),
-               onTap: () => Navigator.push(context,
+          CustomListTile(
+            text: "End Portal Finder",
+            onTap: () => Navigator.push(context,
                 MaterialPageRoute(builder: (context) => EndPortalFinder())),
-            ),
           ),
-          ListTile(
-            title: Text("Circle Generator"),
+          CustomListTile(
+            text: "Circle Generator",
           ),
         ],
       ),
