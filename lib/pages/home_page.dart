@@ -17,8 +17,14 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Theme.of(context).backgroundColor,
       body: ListView(
         children: <Widget>[
-          ListTile(
-            title: Text("End Portal Finder"),
+          DecoratedBox(
+            decoration: BoxDecoration(
+              border: Border.all(color:Colors.red),
+
+            ),
+            child: ListTile(
+              title: Text("End Portal Finder"),
+            ),
           ),
           ListTile(
             title: Text("Circle Generator"),
